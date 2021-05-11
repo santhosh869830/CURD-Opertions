@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>List view</title>
+</head>
+<body>
+<h1> This list come from class based Views : </h1>
+{% for x in employee_list %}
+<ol >
+  <li><p><a href="">{{x.name | upper}}</a> </p></li></ol>
+  <p>{{x.nbr}}</p>
+  <p>{{x.add | title}}</p>
+
+
+
+{% endfor %}
+
+
+</body>
+</html>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form page</title>
+</head>
+<body>
+<h1> Form from class based views</h1>
+<form action="" method="post">
+
+    {{form.as_p}}
+    {% csrf_token %}
+    <input type="submit" value="Insert Record">
+</form>
+</body>
+</html>

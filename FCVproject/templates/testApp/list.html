@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>List view</title>
+</head>
+<body>
+<h1> List from data bases :</h1>
+<h3><button><a href="/fcvApp/form">ADD</a></button></h3>
+{% for x in data %}
+<ul>
+  <li><p><a href="">{{x.name | upper}}</a> </p></li>
+  <li><p>{{x.nbr}}</p></li>
+  <li><p>{{x.add | title}}</p></li>
+</ul>
+
+
+{% endfor %}
+
+</body>
+</html>

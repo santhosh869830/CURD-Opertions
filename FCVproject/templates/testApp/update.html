@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Update Page</title>
+</head>
+<body>
+<h1> We can Upadte Employee details Here : </h1>
+<form action="" method="post">
+  NAME : <input type="text" name="name" value="{{list.name}}"><br><br>
+  NBR : <input type="text" name="nbr" value="{{list.nbr}}"><br><br>
+  ADDRESS : <input type="text" name="add" value="{{list.add}}"><br><br>
+
+  <input type="Submit" value="Update Record ">
+  {% csrf_token %}
+
+</form>
+</body>
+</html>
